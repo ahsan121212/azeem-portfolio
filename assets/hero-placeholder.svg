@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181818" />
+      <stop offset="100%" stop-color="#0f0f0f" />
+    </linearGradient>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#252525" stroke-width="1" stroke-dasharray="2 4" />
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#heroGrad)" />
+  <rect width="1920" height="1080" fill="url(#grid)" opacity="0.6" />
+
+  <!-- Outer frame border with camera corner brackets -->
+  <rect x="60" y="60" width="1800" height="960" fill="none" stroke="#2a2a2a" stroke-width="1.5" />
+  
+  <!-- Corner Brackets -->
+  <path d="M 80 140 L 80 80 L 140 80" fill="none" stroke="#666666" stroke-width="3" />
+  <path d="M 1840 140 L 1840 80 L 1780 80" fill="none" stroke="#666666" stroke-width="3" />
+  <path d="M 80 940 L 80 1000 L 140 1000" fill="none" stroke="#666666" stroke-width="3" />
+  <path d="M 1840 940 L 1840 1000 L 1780 1000" fill="none" stroke="#666666" stroke-width="3" />
+
+  <!-- Center Crosshair Reticle -->
+  <circle cx="960" cy="540" r="48" fill="none" stroke="#444444" stroke-width="1.5" />
+  <line x1="960" y1="460" x2="960" y2="520" stroke="#555555" stroke-width="1.5" />
+  <line x1="960" y1="560" x2="960" y2="620" stroke="#555555" stroke-width="1.5" />
+  <line x1="880" y1="540" x2="940" y2="540" stroke="#555555" stroke-width="1.5" />
+  <line x1="980" y1="540" x2="1040" y2="540" stroke="#555555" stroke-width="1.5" />
+  <circle cx="960" cy="540" r="3" fill="#888888" />
+
+  <!-- Camera HUD Telemetry -->
+  <text x="100" y="115" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#777777" letter-spacing="4">REC ● 24.00 FPS</text>
+  <text x="1820" y="115" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#777777" letter-spacing="4">4K UHD | 3840×2160</text>
+  <text x="100" y="985" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#666666" letter-spacing="3">ISO 400 // SHUTTER 1/48 // F2.8</text>
+  <text x="1820" y="985" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#666666" letter-spacing="3">LOG // NEUTRAL PROFILE</text>
+
+  <!-- Central Title Text -->
+  <text x="960" y="650" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="600" fill="#aaaaaa" letter-spacing="6">CINEMATIC VISUAL / PORTRAIT PLACEHOLDER</text>
+  <text x="960" y="685" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#666666" letter-spacing="3">REPLACE WITH AZEEM REHMAN STILL OR HERO MEDIA</text>
+</svg>

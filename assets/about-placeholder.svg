@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="100%" height="100%">
+  <defs>
+    <linearGradient id="aboutGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#191919" />
+      <stop offset="100%" stop-color="#111111" />
+    </linearGradient>
+    <pattern id="diag" width="40" height="40" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="40" x2="40" y2="0" stroke="#222222" stroke-width="1" stroke-dasharray="2 4" />
+    </pattern>
+  </defs>
+
+  <rect width="800" height="1000" fill="url(#aboutGrad)" />
+  <rect width="800" height="1000" fill="url(#diag)" opacity="0.4" />
+
+  <!-- Outer frame border -->
+  <rect x="40" y="40" width="720" height="920" fill="none" stroke="#2c2c2c" stroke-width="1.5" />
+
+  <!-- Corner Brackets -->
+  <path d="M 60 110 L 60 60 L 110 60" fill="none" stroke="#666666" stroke-width="2.5" />
+  <path d="M 740 110 L 740 60 L 690 60" fill="none" stroke="#666666" stroke-width="2.5" />
+  <path d="M 60 890 L 60 940 L 110 940" fill="none" stroke="#666666" stroke-width="2.5" />
+  <path d="M 740 890 L 740 940 L 690 940" fill="none" stroke="#666666" stroke-width="2.5" />
+
+  <!-- Minimal Silhouette Icon / Reticle -->
+  <circle cx="400" cy="420" r="110" fill="none" stroke="#333333" stroke-width="2" />
+  <circle cx="400" cy="420" r="6" fill="#666666" />
+  <path d="M 270 650 C 270 540, 530 540, 530 650" fill="none" stroke="#333333" stroke-width="2" />
+
+  <!-- Labels -->
+  <text x="400" y="730" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600" fill="#aaaaaa" letter-spacing="4">PORTRAIT PHOTOGRAPH</text>
+  <text x="400" y="760" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" fill="#666666" letter-spacing="2">AZEEM REHMAN // DIRECTOR'S PROFILE</text>
+  <text x="400" y="790" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#444444" letter-spacing="1.5">[ REPLACE WITH ACTUAL PHOTO ]</text>
+</svg>

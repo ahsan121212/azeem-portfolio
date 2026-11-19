@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Azeem Rehman — Videographer | Video Editor | Video Direction</title>
+  <meta name="description" content="Portfolio of Azeem Rehman — Professional Videographer, Video Editor, and Video Direction Creative. Stories told through the lens.">
+
+  <!-- Google Fonts for Cinematic Editorial Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =======================================================================
+       1. HEADER / NAVIGATION
+       ======================================================================= -->
+  <header class="site-header" id="header">
+    <div class="header-inner container">
+      <!-- Logo / Name -->
+      <a href="#hero" class="brand-logo" aria-label="Azeem Rehman Home">
+        <span class="logo-name">AZEEM REHMAN</span>
+        <span class="logo-tag">FILM & DIRECTION</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="site-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#contact" class="nav-link nav-link--cta">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <ul class="mobile-nav-links">
+        <li><a href="#work" class="mobile-nav-link">Work</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#services" class="mobile-nav-link">Services</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <p class="mobile-drawer-label">AZEEM REHMAN</p>
+        <p class="mobile-drawer-sub">Videography | Video Editing | Video Direction</p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- =======================================================================
+         2. HERO SECTION
+         ======================================================================= -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <!-- Hero Text Content -->
+        <div class="hero-content reveal-on-scroll">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>PORTFOLIO // 2026</span>
+          </div>
+
+          <!-- Main Heading -->
+          <h1 class="hero-title">
+            Stories told through the lens.
+          </h1>
+
+          <!-- Supporting Text -->
+          <p class="hero-subtitle">
+            Videographer <span class="sep">|</span> Video Editor <span class="sep">|</span> Video Direction
+          </p>
+
+          <p class="hero-intro">
+            Crafting high-impact cinematic visuals, brand campaigns, and editorial narratives with a dedicated focus on composition, rhythm, and storytelling.
+          </p>
+
+          <!-- Explore Button (scrolls to #work) -->
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-primary">
+              <span>Explore My Work</span>
+              <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M7 17L17 7M17 7H7M17 7V17" />
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Get in Touch</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Media Placeholder -->
+        <!-- 
+          TO EDIT: Replace 'assets/hero-placeholder.svg' with your actual image path
+          e.g. 'assets/azeem-portrait.jpg' or 'assets/hero-cinematic.jpg'
+        -->
+       <div class="hero-visual reveal-on-scroll">
+    <div class="hero-image-wrapper hero-video-wrapper">
+
+        <video
+            class="hero-background-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            poster="assets/images/cover1.jpeg"
+        >
+            <source src="assets/videos/hero-showreel.mp4" type="video/mp4">
+            Your browser does not support HTML video.
+        </video>
+
+        <div class="hero-visual-overlay">
+            <span class="visual-tag visual-tag--top">4K CINEMATIC CAPTURE</span>
+            <span class="visual-tag visual-tag--bottom">AZEEM REHMAN // DIRECTION</span>
+        </div>
+
+    </div>
+</div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         3. SELECTED WORK SECTION
+         ======================================================================= -->
+    <section class="work-section" id="work">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header reveal-on-scroll">
+          <div class="section-label">
+            <span class="label-index">01</span>
+            <span class="label-text">SELECTED WORK</span>
+          </div>
+          <h2 class="section-title">Visual Productions</h2>
+          <p class="section-subtitle">
+            A curated selection of films, commercial campaigns, and narrative projects. Click any project to stream the film.
+          </p>
+        </div>
+
+        <!-- 
+          PROJECT CARDS CONTAINER:
+          Project cards are dynamically rendered from `PROJECTS_DATA` in `script.js`
+          so you can easily update titles, descriptions, YouTube links, and images in one place!
+        -->
+        <div class="projects-grid" id="projectsGrid">
+          <!-- Fallback project cards for instant rendering before script runs -->
+          <noscript>
+            <div class="noscript-notice">
+              <p>Please enable JavaScript to enjoy interactive video previews and custom project playback.</p>
+            </div>
+          </noscript>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         4. ABOUT SECTION
+         ======================================================================= -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          
+          <!-- Portrait Placeholder -->
+          <!-- 
+            TO EDIT: Replace 'assets/about-placeholder.svg' with Azeem's photograph
+            e.g. 'assets/azeem-portrait.jpg'
+          -->
+          <div class="about-portrait-col reveal-on-scroll">
+            <div class="portrait-wrapper">
+              <img 
+                src="assets/images/azeem.jpeg" 
+                alt="Azeem Rehman — Portrait Placeholder" 
+                class="portrait-image"
+              >
+              <div class="portrait-frame-corners">
+                <span class="corner corner-tl"></span>
+                <span class="corner corner-tr"></span>
+                <span class="corner corner-bl"></span>
+                <span class="corner corner-br"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- About Narrative -->
+          <div class="about-content-col reveal-on-scroll">
+            <div class="section-label">
+              <span class="label-index">02</span>
+              <span class="label-text">ABOUT THE CREATIVE</span>
+            </div>
+            
+            <h2 class="section-title">Behind the Frame</h2>
+
+            <!-- Exact Introduction Text Requested -->
+            <div class="about-body">
+              <p class="about-lead">
+                I'm Azeem Rehman, a videographer, video editor and video direction creative with nearly four years of professional experience. I work across the video production process, from capturing footage and directing shoots to shaping the final edit. My focus is on creating meaningful visual content through storytelling, composition and creative execution.
+              </p>
+              <p class="about-secondary">
+                Whether orchestrating full-scale commercial campaigns or shaping intimate brand stories, every project is built upon rigorous visual discipline, intentional camera motion, and refined post-production pacing.
+              </p>
+            </div>
+
+            <!-- Credentials / Quick Highlights -->
+            <div class="about-metrics">
+              <div class="metric-item">
+                <span class="metric-number">04</span>
+                <span class="metric-label">Years Professional Experience</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-number">360°</span>
+                <span class="metric-label">Direction to Post-Production</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-number">4K</span>
+                <span class="metric-label">Cinematic Standard Delivery</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         5. SERVICES SECTION
+         ======================================================================= -->
+    <section class="services-section" id="services">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-header reveal-on-scroll">
+          <div class="section-label">
+            <span class="label-index">03</span>
+            <span class="label-text">DISCIPLINES & EXPERTISE</span>
+          </div>
+          <h2 class="section-title">Services</h2>
+          <p class="section-subtitle">
+            Comprehensive creative solutions tailored to brand identity, commercial campaigns, and narrative storytelling.
+          </p>
+        </div>
+
+        <!-- 4 Services Grid -->
+        <div class="services-grid">
+          
+          <!-- Service 01 -->
+          <div class="service-card reveal-on-scroll">
+            <div class="service-card-top">
+              <span class="service-num">01</span>
+              <span class="service-dot"></span>
+            </div>
+            <h3 class="service-title">Videography &amp; Cinematography</h3>
+            <p class="service-desc">
+              High-end camera operation, dynamic visual framing, and intentional lighting setups designed to capture raw emotion, brand aesthetics, and cinematic depth.
+            </p>
+            <ul class="service-features">
+              <li>Commercial &amp; Brand Shoots</li>
+              <li>Cinematic Lighting &amp; Composition</li>
+              <li>Multi-Camera Setups &amp; Gimbal Work</li>
+            </ul>
+          </div>
+
+          <!-- Service 02 -->
+          <div class="service-card reveal-on-scroll">
+            <div class="service-card-top">
+              <span class="service-num">02</span>
+              <span class="service-dot"></span>
+            </div>
+            <h3 class="service-title">Video Direction</h3>
+            <p class="service-desc">
+              Holistic visual direction from concept development and moodboarding through on-set execution, guiding talent and shaping the core narrative voice.
+            </p>
+            <ul class="service-features">
+              <li>Creative Concept &amp; Storyboarding</li>
+              <li>On-Set Talent &amp; Crew Direction</li>
+              <li>Visual Identity &amp; Aesthetic Tone</li>
+            </ul>
+          </div>
+
+          <!-- Service 03 -->
+          <div class="service-card reveal-on-scroll">
+            <div class="service-card-top">
+              <span class="service-num">03</span>
+              <span class="service-dot"></span>
+            </div>
+            <h3 class="service-title">Video Editing</h3>
+            <p class="service-desc">
+              Precision non-linear editing focused on storytelling cadence, rhythmic pacing, and seamless visual transitions that keep audiences engaged.
+            </p>
+            <ul class="service-features">
+              <li>Narrative &amp; Commercial Cuts</li>
+              <li>Rhythmic Pacing &amp; Beat Matching</li>
+              <li>Multi-Format Deliverables (16:9, 9:16)</li>
+            </ul>
+          </div>
+
+          <!-- Service 04 -->
+          <div class="service-card reveal-on-scroll">
+            <div class="service-card-top">
+              <span class="service-num">04</span>
+              <span class="service-dot"></span>
+            </div>
+            <h3 class="service-title">Post-Production</h3>
+            <p class="service-desc">
+              Refined finishing touches including cinematic color grading, sound design, audio leveling, and clean title mastering to bring final polish to every frame.
+            </p>
+            <ul class="service-features">
+              <li>Cinematic Color Grading (LUTs/Log)</li>
+              <li>Sound Design &amp; Audio Mastering</li>
+              <li>Minimal Motion Graphics &amp; Titles</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         6. CONTACT SECTION
+         ======================================================================= -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        
+        <div class="contact-card reveal-on-scroll">
+          <div class="contact-card-content">
+            <div class="section-label">
+              <span class="label-index">04</span>
+              <span class="label-text">GET IN TOUCH</span>
+            </div>
+            
+            <!-- Requested Headings -->
+            <h2 class="contact-title">Have a project in mind?</h2>
+            <p class="contact-subtitle">Let's create something meaningful.</p>
+
+            <p class="contact-desc">
+              Available for commercial productions, brand films, music videos, and creative direction worldwide. Reach out through the channels below:
+            </p>
+
+            <!-- Contact Channels (Editable Placeholders) -->
+            <!-- 
+              TO EDIT: Replace placeholder email, Instagram handle, and LinkedIn URL below
+            -->
+            <div class="contact-links-grid">
+              
+              <!-- Email Placeholder -->
+              <a href="mailto:contact@azeemrehman.com" class="contact-link-item reveal-on-scroll" id="contactEmailLink">
+                <div class="contact-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                    <path d="M22 6L12 13L2 6" />
+                  </svg>
+                </div>
+                <div class="contact-item-text">
+                  <span class="contact-item-label">Professional Email</span>
+                  <!-- EDIT THIS EMAIL: -->
+                  <span class="contact-item-value" id="displayEmail">contact@azeemrehman.com</span>
+                </div>
+                <span class="contact-item-action">Send Email &rarr;</span>
+              </a>
+
+              <!-- Instagram Placeholder -->
+              <a href="https://instagram.com/azeemrehman" target="_blank" rel="noopener noreferrer" class="contact-link-item reveal-on-scroll" id="contactInstagramLink">
+                <div class="contact-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                  </svg>
+                </div>
+                <div class="contact-item-text">
+                  <span class="contact-item-label">Instagram</span>
+                  <!-- EDIT THIS INSTAGRAM: -->
+                  <span class="contact-item-value" id="displayInstagram">@azeemrehman</span>
+                </div>
+                <span class="contact-item-action">Visit Profile &rarr;</span>
+              </a>
+
+              <!-- LinkedIn Placeholder -->
+              <a href="https://linkedin.com/in/azeemrehman" target="_blank" rel="noopener noreferrer" class="contact-link-item reveal-on-scroll" id="contactLinkedinLink">
+                <div class="contact-item-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                    <rect x="2" y="9" width="4" height="12" />
+                    <circle cx="4" cy="4" r="2" />
+                  </svg>
+                </div>
+                <div class="contact-item-text">
+                  <span class="contact-item-label">LinkedIn</span>
+                  <!-- EDIT THIS LINKEDIN: -->
+                  <span class="contact-item-value" id="displayLinkedin">linkedin.com/in/azeemrehman</span>
+                </div>
+                <span class="contact-item-action">Connect &rarr;</span>
+              </a>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- =======================================================================
+       7. FOOTER
+       ======================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-title">AZEEM REHMAN</span>
+        <span class="footer-roles">Videography <span class="sep">|</span> Video Editing <span class="sep">|</span> Video Direction</span>
+      </div>
+
+      <div class="footer-right">
+        <p class="copyright-text">
+          &copy; <span id="currentYear">2026</span> Azeem Rehman. All rights reserved.
+        </p>
+        <a href="#hero" class="back-to-top" aria-label="Back to top">
+          <span>Back to Top</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =======================================================================
+       8. VIDEO MODAL / EMBEDDED LIGHTBOX PLAYER
+       ======================================================================= -->
+  <div class="video-modal" id="videoModal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    
+    <div class="modal-dialog">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <div class="modal-project-meta">
+          <span class="modal-brand" id="modalBrand">BRAND NAME</span>
+          <h3 class="modal-title" id="modalTitle">Project Title</h3>
+        </div>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close video player">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Video Player Frame Container (16:9 Aspect Ratio) -->
+      <div class="modal-player-container" id="modalPlayerContainer">
+        <!-- The YouTube iframe or fallback state is injected here via script.js -->
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer">
+        <div class="modal-contribution-wrapper">
+          <span class="modal-contribution-label">Azeem's Contribution:</span>
+          <span class="modal-contribution" id="modalContribution">Videography, Video Direction &amp; Video Editing</span>
+        </div>
+        <div class="modal-actions">
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-outline-sm" id="modalYoutubeExternalLink">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+            <span>Watch on YouTube</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
